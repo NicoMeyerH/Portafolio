@@ -1,9 +1,6 @@
-.header {
-  background-color: black;
-}
 
 .Hero-Section {
-  background-image: url("../img/floresycódigos.png");
+  background-image: url("...");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -12,6 +9,10 @@
 .bg-success {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
+}
+
+nav {
+  background: black;
 }
 
 .navbar-brand {
@@ -43,9 +44,18 @@
 .section-4 {
   background: #E5E5E5;
 }
+.rectangulonegro {
+  background-color: black;
+}
 
-.filter {
-  position: relative;
-  -webkit-filter: contrast(30%);
-  filter: contrast(60%);
+.iconos {
+  margin: 100px 100px 100px 100px;
+}
+
+.gruposkills{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  justify-self: center;
+  
 }

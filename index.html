@@ -20,74 +20,31 @@
 </head>
 
 <body>
-    <header class="text-dark text-end py-5  Hero-Section">
-        <div class="container">
-            <div class="ms-auto col-12 col-md-7 ">
-                <h1 class="display-1 fw-bold my-5">
-                    <br>
-                    <br>
-                </h1>
-                <p class="fw-bold my-5">
-                    <br>
-                    <br> <br>
-                    <br> <br>
-                    <br> <br>
-                    <br> <br> <br>
-                    <br> <br>
-                    <br> <br> <br>
-                    <br> <br>
-                    <br>
-                </p>
-
-            </div>
-        </div>
-    </header>
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Contacto</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">Email:</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                        <div class="mb-3">
-                            <label for="message-text" class="col-form-label">Mensaje:</label>
-                            <textarea class="form-control" id="message-text"></textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary">Enviar mensaje</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div>
+     <div>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
 
-                <p class="navbar-brand">
-                    {Hola, soy Nicole <br>
-                    Futura <span class="negrita"> Developer}</span>
-                </p>
+                <a class="btn btn-lg btn-outline-dangerous text-light me-4" href="#inicio" role="button">
+                    <p class="navbar-brand">
+                        {Hola, soy Nicole <br>
+                        Futura <span class="negrita"> Developer}</span>
+                    </p>
+                </a>
+
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                     aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <div class="navbar-nav ms-auto my-2 my-lg-0">
                         <div class="mb-5 pb-5">
-                            <a class="btn btn-lg btn-outline-info text-light me-4" href="#about" role="button">Acerca de Mi</a>
-                            <a class="btn btn-lg btn-outline-info text-light me-4" href="#work" role="button">Trabajos</a>
-                            <button type="button" class="btn btn-lg btn-outline-info text-light me-4"
+                            <a class="btn btn-lg btn-outline-dangerous text-light me-4" href="#about"
+                                role="button">Acerca de
+                                Mi</a>
+                            <a class="btn btn-lg btn-outline-dangerous text-light me-4" href="#trabajos"
+                                role="button">Trabajos</a>
+                            <a class="btn btn-lg btn-outline-dangerous text-light me-4" href="#skills"
+                                role="button">Skills</a>    
+                            <button type="button" class="btn btn-lg btn-outline-dangerous text-light me-4"
                                 data-bs-toggle="modal" data-bs-target="#exampleModal"
                                 data-bs-whatever="@mdo">Contacto</button>
 
@@ -96,9 +53,65 @@
                 </div>
             </div>
         </nav>
+<!--modal contacto-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Contacto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Email:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Mensaje:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Enviar mensaje</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+ <!--endmodal contacto-->   
+        <div>
+            <br>
+            <br>
+            <br>
+        </div>
 
+        
+        
+        <div id="inicio" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="assets/img/codigosyflores.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/img/tablet.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/postit.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
-        <section class="py-5 header text-center">
+          <section class="py-5 rectangulonegro text-center">
             <div class="container py-5 text-white">
                 <header class="py-5">
                     <h1 class="display-4">Mi portafolio <br> personal</h1>
@@ -108,7 +121,6 @@
                 </header>
             </div>
         </section>
-
 
 
         <section id="about" class="container text-center my-5">
@@ -160,57 +172,77 @@
             </div>
         </section>
 
-        <div id="work" class="carousel slide" data-bs-ride="false">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+        <section id="trabajos" class="my-5 p-5 bg-dark">
+            <h2 class="display-4 fw-bold text-center text-light mb-3">Mis trabajos</h2>
+            <div class="row">
+                <div class="col-12 col-sm-4 py-2">
+                    <div class="card">
+                        <img src="assets/img/landingpage.png" alt="puntoarroz">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Proyecto Construyendo un landing page</h5>
+                            <p class="card-text">
+                                En este desafío validamos nuestros conocimientos de CSS. Para lograrlo, tuvimos que
+                                implementar CSS utilizando archivos hojas de estilo externas
+                                al documento HTML. Además, implementamos bordes, margenes, padding y selectores de
+                                etiquetas.
+                            </p>
+                            <button type="button" class="btn btn-outline-info">
+                                Ver más
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 py-2">
+                    <div class="card">
+                        <img src="assets/img/iguanas.png" alt="iguanas">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Iguana Page</h5>
+                            <p class="card-text">
+                                Construimos una página web con requerimientos específicos haciendo validar nuestros
+                                conocimientos de posicionamiento en CSS,
+                                usando valores asociados a display (inline, block,
+                                inline-block), floats, etc.
+                            </p>
+                            <button type="button" class="btn btn-outline-info">
+                                Ver más
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 py-2">
+                    <div class="card">
+                        <img src="assets/img/cuppon.png" alt="cuppon">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">CUPPON</h5>
+                            <p class="card-text">
+                                En este trabajo aprobamos nuestros conocimientos del Framework Bootstrap.
+                                Utilizamos grillas de bootstrap para distribuir el contenido correctamente dándonos como
+                                resultado una página web responsiva que
+                                fuera adaptable a diferentes dispositivos.
+                            </p>
+                            <button type="button" class="btn btn-outline-info">
+                                Ver más
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/img/puntoarroz.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/iguanas.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/cuppon.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-
-        <section id="Skills" class="container my-5">
+        </section>
+       
+        <section id="skills" class="container my-5">
             <h2 class="display-4 fw-bold text-center my-4">Trabajando en estos <span class="negrita"> Skills</span>
             </h2>
 
-            <i class="fa-brands fa-github fa-3x my-5"></i>
-            <i class="fa-brands fa-css3-alt fa-3x my-5"></i>
+            <div class="gruposkills">
+            <i class="fa-brands fa-html5 fa-3x my-5 iconos"></i>
+            <i class="fa-brands fa-css3-alt fa-3x my-5 iconos"></i>
+            <i class="fa-brands fa-bootstrap fa-3x my-5 iconos"></i>
+            <i class="fa-brands fa-github fa-3x my-5 iconos"></i>
+            <i class="fa-light fa-laptop-mobile fa-3x my-5 iconos"></i>
+
+            </div>
+          
+           
 
         </section>
 
